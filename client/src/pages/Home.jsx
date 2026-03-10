@@ -2,17 +2,26 @@ import {
   Grid, Card, CardContent, CardMedia, CardActions,
   Typography, Button
 } from "@mui/material";
+import erica from "../assets/erica.png";
+import jenica from "../assets/jenica.png";
+import karen from "../assets/karen.png";
+import angel from "../assets/angel.png";
 
 const items = [
-  { id: 1, title: "React", desc: "UI Library",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-    url: "https://react.dev" },
-  { id: 2, title: "MUI", desc: "Component Library",
-    img: "https://mui.com/static/logo.png",
-    url: "https://mui.com" },
-  { id: 3, title: "Node.js", desc: "Backend Runtime",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+  { id: 1, title: "Jenica Capili", desc: "",
+    img: jenica,
+    url: "https://www.facebook.com/jenica.capili.33" },
+  { id: 2, title: "Karen Joy Cabuang", desc: "",
+    img: karen,
+    url: "https://www.facebook.com/Renren.2135" },
+  { id: 3, title: "Angel Faith Dela Virgo", desc: "",
+    img: angel,
     url: "https://nodejs.org" },
+    {
+        id: 4, title: "Erica Dela Cruz", desc: "",
+        img: erica,
+        url: "https://www.facebook.com/ekdcctz"
+    }
 ];
 
 function Home() {
@@ -35,9 +44,9 @@ function Home() {
               '&:hover': { boxShadow: 8 },
               transition: 'box-shadow 0.3s'
             }}>
-              <CardMedia component="img" height={180}
+              <CardMedia component="img" height={250}
                 image={item.img} alt={item.title}
-                sx={{ objectFit: 'contain', p: 2,
+                sx={{ objectFit: 'cover', p: 0,
                   bgcolor: '#f0f4f8' }} />
               <CardContent sx={{ flex: 1 }}>
                 <Typography variant="h6">
